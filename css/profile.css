@@ -1,0 +1,597 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: #000000;
+	font-family: "微软雅黑";
+	font-size: 12px;
+}
+
+.pull-menu {
+	display: none;
+}
+
+.nav-pad {
+	display: none;
+}
+
+
+.myNav {
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px solid #ccc;
+	background: white;
+	box-shadow: #000000 1px;
+	position: fixed;
+	z-index: 10;
+}
+
+.navMenu {
+	width: 3.6%;
+	height: 60px;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	background: url(../img/navManu.png) no-repeat center;
+	background-size: 40px 40px;
+	box-sizing: border-box;
+	float: left;
+	cursor: pointer;
+}
+
+.navLeft img {
+	margin-left: 20px;
+	float: left;
+}
+
+.navLeft h2 {
+	float: left;
+	line-height: 60px;
+	font-size: 30px;
+	color: #fadb0b;
+	margin-left: 20px;
+}
+
+.navRight {
+	width: 60%;
+	height: 100%;
+	float: right;
+	position: relative;
+}
+
+/* 头像样式 */
+.headImage {
+	width: 40px;
+	height: 40px;
+	background: url(../img/headImage.png) no-repeat center;
+	background-size: 40px 40px;
+}
+
+/* Nav部分无序列表样式 */
+.navRight>ul>li {
+	float: right;
+	cursor: pointer;
+	margin-left: 40px;
+	font-size: 16px;
+	line-height: 60px;
+}
+
+.navRight>ul>li>a{
+	font-size: 16px;
+}
+
+.navRight>ul>li>a:hover {
+	color: #fadb0b;
+}
+
+.navRight>ul>li:nth-child(1) {
+	margin-top: 10px;
+	margin-right: 30px;
+}
+
+.navRight>ul>li:hover {
+	color: #fadb0b;
+}
+
+.navRight a {
+	font-size: 14px;
+	text-align: left;
+	text-decoration: none;
+}
+
+/* 钱包内容 */
+.navBill {
+	right: 460px;
+}
+
+/* 消息部分 */
+.navNotice {
+	right: 390px;
+}
+
+/* 支持与服务 */
+.navSupport {
+	right: 270px;
+}
+
+/* 主页 */
+#mainPage {
+	margin-top: 15px;
+}
+
+/* 语言选择 */
+.navLanguage {
+	right: 100px;
+}
+
+/* 公共样式 */
+.navPublic {
+	top: 46px;
+	position: absolute;
+	z-index: 5;
+	background: white;
+	display: none;
+	border-radius: 5px;
+	border: 1px solid white;
+	box-shadow: 0 3px 5px #ccc;
+}
+
+.navPublic ul {
+	background: white;
+	width: 110px;
+	height: 40px;
+}
+
+.navPublic ul li:hover {
+	background: #eee;
+}
+
+.navPublic ul li {
+	cursor: pointer;
+	width: 100px;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	padding-left: 10px;
+}
+
+
+/* 侧边栏部分 */
+.asideLeft_small {
+	width: 3.6%;
+	height: 908px;
+	border: 1px solid #ccc;
+	border-top: 0 none;
+	border-bottom: 0 none;
+	overflow: hidden;
+	position: absolute;
+	box-sizing: border-box;
+	box-sizing: border-box;
+	position: fixed;
+
+}
+
+/* 伸缩后的侧边栏 */
+.asideLeft_big {
+	width: 14%;
+	height: 908px;
+	border: 1px solid #ccc;
+	border-top: 0 none;
+	border-bottom: 0 none;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: absolute;
+	display: none;
+}
+
+/* 小侧边栏中图标布局 */
+.asideLeft_small ul li {
+	width: 90%;
+	height: 50px;
+	margin: 20px auto;
+	padding-top: 50px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.asideLeft_small ul li:nth-child(1) {
+	margin-top: 60px;
+	background: url(../img/personData.png) no-repeat center;
+	background-size: 40px 40px;
+}
+
+.asideLeft_small ul li:nth-child(2) {
+	background: url(../img/personDetermine.png) no-repeat center;
+	background-size: 40px 40px;
+}
+
+.asideLeft_small ul li:nth-child(3) {
+	background: url(../img/personSafe.png) no-repeat center;
+	background-size: 40px 40px;
+}
+
+.asideLeft_small ul li:nth-child(4) {
+	background: url(../img/vipMember.png) no-repeat center;
+	background-size: 40px 40px;
+}
+
+.asideLeft_small ul li:nth-child(5) {
+	background: url(../img/personFriend.png) no-repeat center;
+	background-size: 40px 40px;
+}
+
+.asideLeft_small ul li:nth-child(6) {
+	background: url(../img/rightOpen.png) no-repeat center;
+	background-size: 40px 40px;
+}
+
+/* 大侧边栏中文字布局 */
+.asideLeft_big ul {
+	margin: 0 0 0 20px;
+}
+
+.asideLeft_big ul li {
+	width: 100px;
+	font-size: 20px;
+	margin-top: 100px;
+	padding: 0;
+	cursor: pointer;
+}
+
+.asideLeft_big ul li:hover {
+	color: #fadb0b;
+}
+
+/* 文章部分 */
+.articleBg {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	background: yellow;
+}
+
+.article {
+	width: 96.4%;
+	height: 93.5%;
+	position: absolute;
+	right: 0;
+}
+
+.personData {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	/* display: none; */
+}
+
+.personDetermine {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: none;
+}
+
+.personSafe {
+	height: 100%;
+	position: relative;
+	display: none;
+}
+
+.vipMember {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: none;
+}
+
+.personFriend {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: none;
+}
+
+
+.publicImage {
+	width: 100%;
+	height: 140px;
+	border-bottom: 1px dashed #ccc;
+	position: relative;
+}
+
+.publicImage div {
+	position: absolute;
+	width: 20%;
+	height: 100px;
+	border-radius: 15px;
+	background: url(../img/user.png) no-repeat;
+	background-size: 100px 100px;
+	top: 10px;
+	left: 20px;
+}
+
+.publicImage a {
+	cursor: pointer;
+	width: 65px;
+	color: #68AEE9;
+	font-size: 14px;
+	/* text-decoration: underline; */
+	display: block;
+	margin: 105px 0 0 20px;
+
+}
+
+.publicImage ul {
+	width: 60%;
+	height: 100px;
+	margin-left: 140px;
+	padding-top: 14px;
+}
+
+.publicImage ul li {
+	font-size: 16px;
+	margin-top: 14px;
+}
+
+.userPublic {
+	font-size: 16px;
+	color: #ccc;
+}
+
+/* 个人信息页面布局 */
+.personImage {
+	width: 200px;
+	height: 200px;
+	top: 12%;
+	left: 30%;
+	position: absolute;
+	background: url(../front/img/headImage.png) no-repeat;
+}
+
+
+.profileInformation:hover .clickModify{
+	display: block!important;
+}
+
+.personGetId {
+	position: absolute;
+	top: 45%;
+	left: 160px;
+	width: 300px;
+	height: 160px;
+}
+
+.personGetId li {
+	font-size: 16px;
+	width: 300px;
+	overflow-x: hidden;
+}
+
+.personGetId span {
+	font-size: 16px;
+	line-height: 40px;
+
+}
+
+.personDataRight {
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	width: 460px;
+	height: 94%;
+}
+
+/* 个人信息页面修改 */
+
+.profileInformation:nth-child(1) {
+	margin-top: 80px;
+}
+
+.profileInformation {
+	width: 460px;
+	height: 55px;
+}
+
+.afterprofileInformation {
+	width: 460px;
+	height: 55px;
+}
+
+.afterprofileInformation:nth-child(1) {
+	margin-top: 80px;
+}
+
+.profileFont {
+	width: 105px;
+	height: 25px;
+	font-size: 16px;
+	display: inline-block;
+	padding: 18px 0;
+	color: #999;
+	float: left;
+}
+
+.publicModify {
+	/* height: 100%; */
+	float: left;
+	font-size: 16px;
+	line-height: 55px;
+}
+
+.clickModify {
+	width: 64px;
+	height: 20px;
+	float: left;
+	margin: 18px 0 0 20px;
+	cursor: pointer;
+	display: none;
+}
+
+#phone {
+	width:84px;
+}
+
+#email {
+	width:84px;
+}
+
+.clickModify img{
+	display: inline-block;
+	margin-top: 2px;
+}
+
+.clickModify span{
+	font-size: 16px;
+	margin-right: 12px;
+	float: right;
+	color: #00BFFF;
+}
+
+.confirm {
+	width: 100%;
+	height: 45px;
+	visibility: hidden;
+}
+
+.confirm div {
+	width: 45px;
+	height: 35px;
+	float: left;
+	font-size: 16px;
+	margin-right: 15px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	text-align: center;
+}
+.profileconfirm {
+	width: 100%;
+	height: 45px;
+	display: none;
+	margin-top: 170px;
+	position: absolute;
+	right: 40%;
+	display: none;
+}
+
+.profileconfirm div{
+	width: 45px;
+	height: 35px;
+	float: right;
+	font-size: 16px;
+	margin-right: 15px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	text-align: center;
+}
+
+
+/* 个人页面左侧 */
+.personDataLeft {
+	position: absolute;
+	width: 30%;
+	min-width: 320px;
+	height: 100%;
+	left: 5%;
+/* 	background: pink; */
+}
+
+
+/* 用户安全页面 */
+.safeDiv {
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #ccc;
+}
+
+.safeDiv span {
+	font-size: 20px;
+	line-height: 50px;
+	padding-left: 25px;
+}
+
+.safeUl li {
+	width: 99%;
+	height: 80px;
+	padding-left: 1%;
+	border-bottom: 1px dashed #ccc;
+}
+
+.safeUl li div {
+	margin-top: 50px;
+}
+
+.safeUl span {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.safeUl em {
+	width: 100%;
+	font-style: normal;
+	font-size: 16px;
+	padding-left: 2%;
+	line-height: 16px;
+}
+
+.safeUl i {
+	font-style: normal;
+	font-size: 16px;
+}
+
+.safeUl a {
+	float: right;
+	margin-right: 100px;
+	text-decoration: none;
+	font-size: 18px;
+	color: deepskyblue;
+}
+
+.modifyPassword {
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	top: 250px;
+	left: 50%;
+	margin-left: -250px;
+	display: none;
+	text-align: center;
+	border: 1px solid #ccc;
+	background: #eee;
+	/* background: rgba(255,255,255,1); */
+}
+
+.modifyPassword span {
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 100px;
+}
+
+.modifyPassword span:nth-child(1) {
+		display: inline-block;
+		margin-top: 60px;
+}
+.modifyPassword input {
+	width: 240px;
+	height: 30px;
+	font-size: 16px;
+	padding-left: 10px;
+	outline: none;
+	margin-left: 10px;
+}
+.modifyPassword button {
+		width: 50px;
+		height: 30px;
+		margin-top: 30px;
+		margin-left: 30px;
+		margin-right: 30px;
+		
+}
+.modifyPassword button {
+	width: 60px;
+	height: 40px;
+	font-size: 20px;
+	border: 1px solid #000;
+	background: white;
+	box-shadow: 5px 5px 5px #ccc;
+}

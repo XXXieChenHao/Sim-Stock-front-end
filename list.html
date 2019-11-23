@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/list.css" />
+	<script src="js/list.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<body>
+		<div class="myNav">
+			<div class="navLeft">
+				<img src="img/1.ico" width="58px" height="58px">
+				<h2>思道客</h2>
+			</div>
+			<div class="navRight">
+				<ul>
+					<li>
+						<!-- 转向个人信息页 -->
+						<a href="./profile.html">
+							<div class="headImage"></div>
+						</a>
+					</li>
+					<div></div>
+					<li onmouseover="showMenu('navLanguage')" onmouseout="hiddenMenu('navLanguage')">中文简体</li>
+					<div class="navLanguage navPublic" id="navLanguage" onmouseover="showMenu('navLanguage')" onmouseout="hiddenMenu('navLanguage')">
+						<ul>
+							<!-- 转向英文页 -->
+							<li><a href="###">English</a></li>
+						</ul>
+					</div>
+					<li onmouseover="changeMainPage()" onmouseout="hiddenMainPage()"><a href="./list.html"><img src="img/mainPage.png" width="25px"
+							 height="25px" id="mainPage"></a></li>
+					<!-- 转向主页 -->
+					<div></div>
+					<li onmouseover="showMenu('navSupport')" onmouseout="hiddenMenu('navSupport')">支持与服务</li>
+					<div id="navSupport" class="navSupport navPublic" onmouseover="showMenu('navSupport')" onmouseout="hiddenMenu('navSupport')">
+						<ul>
+							<!-- 转向各个页 -->
+							<li><a href="###">帮助</a></li>
+							<li><a href="###">服务</a></li>
+							<li><a href="###">建议</a></li>
+							<li><a href="###">论坛</a></li>
+							<li><a href="###">求助</a></li>
+							<li><a href="###">联系我们</a></li>
+						</ul>
+					</div>
+					<li onmouseover="showMenu('navNotice')" onmouseout="hiddenMenu('navNotice')">通知</li>
+					<div id="navNotice" class="navNotice navPublic" onmouseover="showMenu('navNotice')" onmouseout="hiddenMenu('navNotice')">
+						<ul>
+							<!-- 转向消息页 -->
+							<li><a href="###">全部消息</a></li>
+							<li><a href="###">新消息</a></li>
+						</ul>
+					</div>
+					<li onmouseover="showMenu('navBill')" onmouseout="hiddenMenu('navBill')"><a href="./wallet.html">钱包</a></li>
+					<div class="navBill navPublic" id="navBill" onmouseover="showMenu('navBill')" onmouseout="hiddenMenu('navBill')">
+						<ul>
+							<!-- 转向各个页 -->
+							<li><a href="###">开户</a></li>
+							<li><a href="###">余额</a></li>
+							<li><a href="###">消费记录</a></li>
+						</ul>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<div id="simListBg">
+		</div>
+		<br><br><br>
+		<!-- <div class="divPage"> -->
+			<div class="simPage" id="simPage">
+			</div>
+		<!-- </div> -->
+	</body>
+</html>
